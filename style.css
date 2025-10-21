@@ -49,6 +49,30 @@ header p{
     font-family: 'Poppins';
 }
 
+/* tika */
+.brand{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: inline-block;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover{
+    background: linear-gradient(90deg, #6a00f4, #0077b6);
+    color: #fff;
+    box-shadow: 0 0 10px #0077b6;
+}
+
 
 
 
