@@ -1,0 +1,22 @@
+/* alpin */
+
+@font-face {
+    font-family: 'Paradose';
+    src: url(./assets/fonts/WsParadoseRegular-1jPAe.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background: linear-gradient(135deg, #0a0a0a 30%, #141625 70%);
+    color: #e0e0e0;
+}
