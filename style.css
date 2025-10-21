@@ -144,3 +144,18 @@ footer p {
     font-size: 15px;
     color: #cbd5e1;
 }
+
+
+/* parez */
+/* about */
+.about h2, .agenda h2{
+    color: white;
+    border-bottom: 2px solid #6a00f4;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.about-content{
+    text-align: center;
+}
