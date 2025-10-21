@@ -14,20 +14,20 @@
         </div>
 
         <nav>
-            <a href="#">Beranda</a>
-            <a href="#">Tentang</a>
-            <a href="#">Agenda</a>
-            <a href="#">Kontak</a>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#kontak">Kontak</a>
         </nav>
     </header>
 
-    <div class="hero">
+    <div class="hero" id="beranda">
         <h2>Temukan Ide Bangun Masa Depan</h2>
         <p>Bersama generatif kreatif menuju masa depan.</p>
     </div>
 
     <div class="container">
-        <section class="about">
+        <section class="about" id="tentang">
             <h2>Tentang Acara</h2>
             <div class="about-content">
                 <img src="./assets/image/1.png" alt="">
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="agenda">
+        <section class="agenda" id="agenda">
             <h2>Agenda Kegiatan</h2>
             <div class="cards">
                 <div class="card">
@@ -71,9 +71,32 @@
         </section>
     </div>
 
-    <footer>
+    <footer id="kontak">
         <p>&copy 2025 Kelompok 4 | TechFest Sekolah Nasional</p>
         <p>Hubungi kami: techfest2025@sekolah.id</p>
     </footer>
+
+    <script>
+        const sections = document.querySelectorAll("section, .hero, footer");
+        const navLinks = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+            }
+        });
+        });
+    </script>
+
 </body>
 </html>

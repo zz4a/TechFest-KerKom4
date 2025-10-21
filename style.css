@@ -19,14 +19,21 @@ body {
     font-family: 'Poppins';
     background: linear-gradient(135deg, #0a0a0a 30%, #141625 70%);
     color: #e0e0e0;
+    scroll-behavior: smooth;
+    padding-top: 100px; /* tambahkan agar konten tidak tertutup header */
 }
 
 /* valen */
 /* header ama nav */
-header{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background: linear-gradient(120deg, #6a00f4, #0077b6);
     color: #fff;
-    box-shadow: 0 4px 15px (0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     padding: 15px 60px;
     display: flex;
     justify-content: space-between;
@@ -212,4 +219,10 @@ footer p {
 
 .about-content{
     text-align: center;
+}
+
+nav a.active {
+    background: #fff;
+    color: #6a00f4;
+    box-shadow: 0 0 10px #fff;
 }
