@@ -86,3 +86,32 @@ footer p {
     margin: 5px;
     font-size: 14px
 }
+
+/* rezky */
+.about img{
+    display: inline-block;
+    width: 45%;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0 0 20px rgba(106, 0, 244, 0.5);
+    transition: 0.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.about img:hover{
+    filter: grayscale(0%);
+}
+
+.about-text{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+    vertical-align: top;
+}
+
+.about-text p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #cbd5e1;
+}
