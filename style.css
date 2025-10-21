@@ -20,3 +20,69 @@ body {
     background: linear-gradient(135deg, #0a0a0a 30%, #141625 70%);
     color: #e0e0e0;
 }
+
+
+
+/* reno */
+/* card */
+.cards{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 280px;
+    height: 350px;
+    background: linear-gradient(160deg, #1a1a2e, #1e2135);
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(106, 0,244,0.5);
+    vertical-align: top;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    filter: grayscale(0%);
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(106, 0,244,0.5);
+}
+
+.card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.card-content{
+    padding: 15px;
+    text-align: left;
+}
+
+.card h3{
+    color: #7dd3fc;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.card p{
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+footer{
+    background: linear-gradient(90deg, #6a00f4, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    box-shadow: 0 -4px 10px rgba(0, 0,0,0.5);
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px
+}
