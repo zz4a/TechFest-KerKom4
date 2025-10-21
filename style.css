@@ -21,6 +21,35 @@ body {
     color: #e0e0e0;
 }
 
+/* valen */
+/* header ama nav */
+header{
+    background: linear-gradient(120deg, #6a00f4, #0077b6);
+    color: #fff;
+    box-shadow: 0 4px 15px (0,0,0,0.5);
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: Paradose;
+}
+
+header p{
+    font-style: italic;
+    color: #bde0fe;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+
+
 
 
 /* reno */
