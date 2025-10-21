@@ -95,6 +95,15 @@ nav a:hover{
     font-family: 'Poppins';
 }
 
+/* container */
+.container{
+    width: 1000px;
+    margin: 60px auto;
+    background: rgba(20, 20,30,0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0,0,0.6);
+    padding: 40px 50px;
+}
 
 
 /* reno */
